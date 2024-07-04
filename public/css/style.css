@@ -1,0 +1,641 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+}
+
+
+
+
+/* login */
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10%;
+    align-items: center;
+}
+
+.col-logo {
+    flex: 1;
+    text-align: center;
+}
+
+.col-logo img {
+    width: 100px;
+}
+
+.col-form {
+    flex: 1;
+}
+
+.col-form h2 {
+    text-align: center;
+}
+
+.row form {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+form input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.row .btn-login {
+    background-color: rgb(10, 189, 10);
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+form .btn-login:hover {
+    background-color: rgb(7, 119, 7);
+}
+
+.text-danger {
+    color: red;
+}
+
+
+
+.lien {
+    text-align: center;
+}
+
+
+
+.row p {
+    margin-top: 10px;
+}
+
+/**/
+
+
+.darkTheme.button-Active span {
+    margin-left: 16px;
+}
+
+body {
+    background: #d1deec;
+    -webkit-text-size-adjust: 100%;
+    -webkit-tap-highlight-color: #3a78ffec;
+}
+
+button:focus,
+input:focus {
+    border: none;
+    outline: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+b {
+    color: var(--black);
+}
+
+a:focus,
+a:hover {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* header section style start here */
+.logo-box {
+    padding: 10px;
+    background-color: #333;
+    text-align: center;
+}
+
+.logo-box .navbar-brand {
+    color: #fff;
+    font-size: 1.5rem;
+}
+
+/* Styles pour la partie visible des utilisateurs connectés */
+.header-container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 20px auto;
+    max-width: 1200px;
+}
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+}
+
+.search-box {
+    flex: 1;
+    position: relative;
+    margin-right: 20px;
+}
+
+.search-box input[type="search"] {
+    padding: 10px 40px 10px 15px;
+    border-radius: 25px;
+    border: none;
+    background-color: #f9f9f9;
+    width: 100%;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+    color: #333;
+    font-size: 14px;
+    /* Ajustez la taille de la police au besoin */
+}
+
+.search-box button {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    background: none;
+    border: none;
+    cursor: pointer;
+    color: #333;
+}
+
+.search-box button:hover {
+    color: #1877f2;
+    /* Couleur au survol */
+}
+
+.icon-box1 {
+    display: flex;
+    align-items: center;
+}
+
+.icon-box1 a {
+    color: #333;
+    font-size: 1.5rem;
+    margin-right: 15px;
+}
+
+.icon-box1 a:hover {
+    color: #1877f2;
+}
+
+.icon-box2 {
+    display: flex;
+    align-items: center;
+}
+
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.username {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #333;
+}
+
+.dropdown {
+    position: relative;
+    cursor: pointer;
+}
+
+.dropdown .dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 50px;
+    right: -20px;
+    background-color: #fff;
+    min-width: 160px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+.dropdown-item {
+    padding: 10px 15px;
+    color: black;
+    display: block;
+    text-decoration: none;
+}
+
+.dropdown-item:hover {
+    color: rgba(143, 143, 253, 0.993);
+}
+
+
+
+/* header section style end here */
+
+/* home section start here */
+
+.home {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    min-height: 100vh;
+}
+
+.home-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.home-center {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.home-center-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+
+
+
+
+.home-center .mini-headign {
+    color: #1877f2;
+    margin-bottom: 10px;
+}
+
+
+
+
+
+
+
+/* facebook post 01 start */
+/* Positionner l'icône à droite de la publication */
+.fb-post1 {
+    width: 50%;
+    max-width: 600px;
+    margin: 20px 0;
+}
+
+.post-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+    /* Ajouté pour le positionnement absolu du menu */
+}
+
+/* Styles pour l'icône des options */
+.options-icon {
+    cursor: pointer;
+    font-size: 1.5rem;
+}
+
+/* Styles pour le menu des options */
+.options-menu {
+    display: none;
+    position: absolute;
+    right: 0;
+    background: white;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    list-style: none;
+    padding: 10px;
+    margin: 0;
+    border-radius: 5px;
+}
+
+.options-menu li {
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.options-menu a {
+    text-decoration: none;
+    color: black;
+}
+
+
+
+.options-menu input {
+    background-color: white;
+    border: none;
+
+}
+
+.post-link {
+    color: inherit;
+    text-decoration: none;
+    display: block;
+}
+
+.post-link:hover {
+    text-decoration: none;
+}
+
+.fb-post1 {
+    background: white;
+    box-shadow: 0 2px 5px 0 #76767663;
+    border-radius: 20px;
+    padding: 15px 20px;
+    padding-bottom: 20px;
+    margin-bottom: 20px;
+    margin-top: 10px;
+    max-width: 800px;
+}
+
+.fb-post1-container {
+    display: flex;
+    flex-direction: column;
+}
+
+.fb-post1-header {
+    padding-bottom: 10px;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 8px;
+}
+
+.fb-post1-header ul {
+    display: flex;
+}
+
+.fb-post1-header ul li {
+    text-transform: uppercase;
+    padding: 5px 10px;
+    font-weight: 600;
+    color: var(--gray);
+    transition: .4s;
+    cursor: pointer;
+}
+
+.fb-post1-header ul li:hover {
+    color: #3d3e42;
+}
+
+.fb-post1-header .active {
+    color: var(--black);
+    border-bottom: 3px solid #1877f2;
+}
+
+.fb-p1-main {
+    display: flex;
+    flex-direction: column;
+}
+
+.post-title {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    margin: 15px 0;
+}
+
+.post-title img {
+    width: 50px;
+    border-radius: 50px;
+    margin-right: 20px;
+    margin-bottom: 20px;
+}
+
+.post-title ul {
+    width: 87%;
+    margin-bottom: 20px;
+}
+
+span {
+    color: gray;
+    font-weight: 400;
+    font-size: 14px;
+}
+
+.post-content p {
+    color: black;
+    font-size: 16px;
+}
+
+.post-title p a {
+    color: #4575b3;
+}
+
+.post-images {
+    display: flex;
+    justify-content: center;
+    margin-top: 10px;
+}
+
+.post-images1 {
+    width: 100%;
+    max-width: 300px;
+    /* Largeur maximale pour le conteneur des images */
+    overflow: hidden;
+    /* Masque le débordement de l'image */
+    border-radius: 10px;
+    /* Coins arrondis */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    /* Ombre légère */
+}
+
+.post-images1 img {
+    width: 100%;
+    height: 200px;
+    /* Hauteur spécifique pour les images */
+    object-fit: cover;
+    /* Redimensionne l'image pour remplir le conteneur tout en conservant son ratio */
+    border-radius: 10px;
+    /* Coins arrondis */
+}
+
+
+
+
+.ajoutpub {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background-color: #fff;
+
+    padding: 10px;
+
+    border-radius: 50%;
+
+    box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.1);
+
+    text-align: center;
+
+
+}
+
+.like-comment {
+    margin-top: 10px;
+}
+
+.like-comment input[name=text] {
+    border-radius: 10px;
+}
+
+
+.comment_txt {
+    color: #858383;
+    font-size: 12px;
+    margin-left: 5px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1050;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+.modal-content {
+    background: #d1deec;
+    margin: 10% auto;
+    padding: 10px;
+    border: 1px solid #888;
+    width: 80%;
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/*style pub*/
+.publication-card {
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    margin: auto;
+    max-width: 600px;
+}
+
+.card-title {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+}
+
+.form-label {
+    font-weight: bold;
+}
+
+.form-control {
+    border-radius: 5px;
+}
+
+
+
+
+
+.form-group.text-right {
+    text-align: right;
+    margin-top: 10px;
+}
+
+/*show*/
+.publication-details {
+    display: flex;
+    gap: 20px;
+    justify-content: space-between;
+
+}
+
+.publication-details .post {
+    padding-left: 10px;
+    width: 100%;
+    background-color: white;
+}
+
+.publication-details .post-title {
+    display: flex;
+}
+
+.post-content .post-images {
+    margin-left: 10px;
+    margin-bottom: 10px;
+    max-width: 300px;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.post-content a {
+    text-decoration: none;
+}
+
+.coment-detail {
+    width: 30%;
+    max-height: 80vh;
+    overflow-y: auto;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background-color: #f9f9f9;
+}
+
+.comment {
+    display: flex;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.comment-avatar {
+    width: 30px;
+    /* Taille réduite de la photo */
+    height: 30px;
+    margin-right: 10px;
+}
+
+.comment_txt {
+    word-wrap: break-word;
+}
+
+.comment h6 {
+    margin: 0;
+}
+
+/*show profil*/
+.show-profil {
+    background-color: rgb(255, 255, 255);
+    padding: 20px;
+    width: 70%;
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
