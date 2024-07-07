@@ -17,7 +17,7 @@
                     @enderror
                     <button class="btn-login">Se connecter</button>
                   <div class="lien"><a href="{{ route('Profil.create') }}">Créer nouveau compte</a></div>  
-                  <h1>hello</h1>
+                  
                 </form>
             </div>
         </div>
