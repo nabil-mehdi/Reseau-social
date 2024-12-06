@@ -8,7 +8,7 @@
 <div class="header-container">
     <script src="{{ asset('script/script.js') }}"></script>
     <div class="header-wrapper">
-        <img src="{{ asset('logo.png') }}" alt="Logo" style="width: 40px">
+        <a href="{{ route('Publication.index') }}"> <img src="{{ asset('logo.png') }}" alt="Logo" style="width: 40px"></a>
         <div class="search-box">
             <form class="form-inline" action="{{ route('Publication.search') }}" method="GET">
                 <input class="form-control mr-sm-2" type="search" placeholder="Chercher une place" aria-label="Chercher une place" name="query" value="{{ request('query') }}">
@@ -16,7 +16,7 @@
             </form>
         </div>
         <div class="icon-box1">
-            <a href="{{ route('Publication.index') }}"><i class="fas fa-home"></i></a>
+           
             <a href="{{ route('Profil.index') }}"><i class="fas fa-users"></i></a>
         </div>
         <div class="icon-box2">
